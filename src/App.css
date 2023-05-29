@@ -9,6 +9,4 @@
 
 .App {
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: 6rem 1fr 4rem;
 }

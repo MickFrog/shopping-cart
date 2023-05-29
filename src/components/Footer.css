@@ -1,4 +1,5 @@
 .myFooter {
+    height: 4rem;
     background-color: var(--myBlack);
     color: white;
 }

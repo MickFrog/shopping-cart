@@ -1,4 +1,5 @@
 .myHeader {
+    height: 6rem;
     background-color: var(--myBlack);
     color: white;
 }
