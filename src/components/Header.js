@@ -1,6 +1,7 @@
 import React from "react";
 import './Header.css';
 import { Link } from "react-router-dom";
+import cartImage from '../assets/cartImage.svg'
 
 const Header = () => {
     return (
@@ -17,7 +18,10 @@ const Header = () => {
                 </Link>
 
                 <Link to='/cart'>
-                    <div>Cart</div>
+                    <div className="shopperCart" data-count="3">
+                        Cart
+                        <img src={cartImage} alt="cart_img"/>
+                    </div>
                 </Link>
             </div>
         </div>
