@@ -14,11 +14,11 @@ const Header = () => {
 
             <div className="nav-links">
                 <Link to='/shop'>
-                    <div>Shop</div>
+                    <div data-testid="shop-text-test">Shop</div>
                 </Link>
 
                 <Link to='/cart'>
-                    <div className="shopperCart" data-count="3">
+                    <div className="shopperCart" data-count="3" data-testid="cart-text-test">
                         Cart
                         <img src={cartImage} alt="cart_img"/>
                     </div>
