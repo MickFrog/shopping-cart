@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+
 .myHeader {
     height: 6rem;
     background-color: var(--myBlack);
     color: white;
+
+    padding: var(--myPadding);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.storeName {
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 1.8rem;
+    color: #F7B32B;
+}
+
+.nav-links {
+    width: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }

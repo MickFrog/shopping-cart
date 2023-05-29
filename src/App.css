@@ -1,6 +1,8 @@
 :root {
   --myBlack: #1D1A05;
   --myGreen: #7FB069;
+  --myPadding: 24px;
+  --textSize: calc(10px + 2vmin);
 }
 
 .contentBg {
