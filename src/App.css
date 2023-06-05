@@ -1,6 +1,8 @@
 :root {
   --myBlack: #1D1A05;
   --myGreen: #7FB069;
+  --myYellow: #F7B32B;
+  --myBlue: #388697;
   --myPadding: 24px;
   --textSize: calc(10px + 2vmin);
 }
@@ -10,5 +12,50 @@
 }
 
 .App {
-  min-height: 100vh;
+  background-image: url(./assets/waveBg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 1.4rem;
+  font-size: 1.2rem;
+  min-height: calc(100vh - 6rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+#veggiesImg {
+  height: 30rem;
+  width: 50rem;
+
+  border-radius: 2.5rem;
+}
+
+.home-text {
+  height: 35rem;
+  width: max(25rem, 30%);
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  font-size: 1.8rem;
+}
+
+.quality-produce {
+  font-weight: 700;
+  color: var(--myYellow);
+}
+
+.shopBtn {
+  padding: 0.5rem 1rem;
+  width: max(180px, 40%);
+
+  background-color: var(--myYellow);
+}
+
+.shopBtn:hover {
+  background-color: #977229;
 }

@@ -28,3 +28,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  /* border-radius: 0.5rem; */
+  border: none;
+}
