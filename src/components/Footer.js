@@ -1,5 +1,9 @@
 import React from "react";
 import './Footer.css';
+import youtubeIcon from '../assets/youtubeIcon.svg'
+import facebookIcon from '../assets/facebookIcon.svg'
+import twitterIcon from '../assets/twitterIcon.svg'
+import instaIcon from '../assets/instagramIcon.svg'
 
 const Footer = () => {
     return (
@@ -9,11 +13,15 @@ const Footer = () => {
                     <h4>Our Headquarters</h4>
                     <p>1234 Main Street</p>
                     <p>Cityville, Stateville 56789</p>
-                    <p>United States</p>
+                    <p>United Buckets</p>
                 </div>
 
-                <div>
+                <div className="socials">
                     <h4>Follow us on our socials</h4>
+                    <img src={youtubeIcon} alt="Youtube"/>
+                    <img src={facebookIcon} alt="Facebook"/>
+                    <img src={twitterIcon} alt="Twitter"/>
+                    <img src={instaIcon} alt="Instagram"/>
                 </div>
             </div>    
                     

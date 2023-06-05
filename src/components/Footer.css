@@ -19,10 +19,16 @@
     gap: 10%;
 }
 
-.address {
+.address > p {
     font-size: var(--smallText);
+    padding-left: var(--myPadding);
 }
 
-.address > p {
-    padding-left: var(--myPadding);
+.socials > img {
+    margin-right: 5px;
+}
+
+.socials > img:hover {
+    scale: 1.2;
+    transition: 300ms;
 }
