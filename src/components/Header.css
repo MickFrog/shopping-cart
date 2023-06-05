@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
 
 .myHeader {
-    height: 6rem;
+    height: max(6rem, max-content);
     background-color: var(--myBlack);
     color: white;
 
@@ -24,12 +24,13 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .shopperCart {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .shopperCart::before{
