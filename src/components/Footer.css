@@ -1,5 +1,28 @@
 .myFooter {
-    height: 4rem;
+    padding: var(--myPadding);
+    height: max-content;
     background-color: var(--myBlack);
     color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: var(--myPadding);
+}
+
+.about-details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.address {
+    font-size: var(--smallText);
+}
+
+.address > p {
+    padding-left: var(--myPadding);
 }

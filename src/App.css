@@ -5,6 +5,7 @@
   --myBlue: #388697;
   --myPadding: 24px;
   --textSize: calc(10px + 2vmin);
+  --smallText: calc(10px + 1vmin);
 }
 
 .contentBg {
@@ -16,7 +17,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding: 1.4rem;
+  padding: var(--myPadding);
   font-size: 1.2rem;
   min-height: calc(100vh - 6rem);
 
