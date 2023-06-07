@@ -58,5 +58,6 @@
 }
 
 .shopBtn:hover {
-  background-color: #977229;
+  background-color: var(--myBlack);
+  color: var(--myGreen);
 }

@@ -1,0 +1,45 @@
+{
+    "groceries": [
+      {
+        "product": "Milk",
+        "price": 3.49
+      },
+      {
+        "product": "Eggs",
+        "price": 2.99
+      },
+      {
+        "product": "Bread",
+        "price": 2.49
+      },
+      {
+        "product": "Rice",
+        "price": 4.99
+      },
+      {
+        "product": "Pasta",
+        "price": 1.99
+      },
+      {
+        "product": "Canned beans",
+        "price": 0.99
+      },
+      {
+        "product": "Chicken breasts",
+        "price": 6.99
+      },
+      {
+        "product": "Ground beef",
+        "price": 5.99
+      },
+      {
+        "product": "Apples",
+        "price": 1.29
+      },
+      {
+        "product": "Potatoes",
+        "price": 2.99
+      }
+    ]
+  }
+  
