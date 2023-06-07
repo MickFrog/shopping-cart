@@ -5,6 +5,10 @@ import Footer from "./components/Footer";
 import App from './App';
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
+import products from './products.json';
+
+//load products from JSON file
+const stock = products.groceries;
 
 const RouteSwitch = () => {
     return (
@@ -13,7 +17,7 @@ const RouteSwitch = () => {
 
             <Routes>
                 <Route path="/" element={<App />}/>
-                <Route path="/shop" element={<Shop />}/>
+                <Route path="/shop" element={<Shop items={stock}/>}/>
                 <Route path="/cart" element={<Cart />}/>
             </Routes>
 

@@ -10,6 +10,8 @@
 
 .pdt-image {
     width: 500px;
+    aspect-ratio: 2/1;
+    object-fit: cover;
 }
 
 .pdt-name{

@@ -1,43 +1,63 @@
 {
     "groceries": [
       {
+        "id": "P01",
         "product": "Milk",
+        "imageSrc": "./products/milk.jpg",
         "price": 3.49
       },
       {
+        "id": "P02",
         "product": "Eggs",
+        "imageSrc": "./products/eggs.jpg",
         "price": 2.99
       },
       {
+        "id": "P03",
         "product": "Bread",
+        "imageSrc": "./products/bread.jpg",
         "price": 2.49
       },
       {
+        "id": "P04",
         "product": "Rice",
+        "imageSrc": "./products/rice.jpg",
         "price": 4.99
       },
       {
+        "id": "P05",
         "product": "Pasta",
+        "imageSrc": "./products/pasta.jpg",
         "price": 1.99
       },
       {
+        "id": "P06",
         "product": "Canned beans",
+        "imageSrc": "./products/cannedBeans.jpg",
         "price": 0.99
       },
       {
+        "id": "P07",
         "product": "Chicken",
+        "imageSrc": "./products/chicken.jpg",
         "price": 6.99
       },
       {
+        "id": "P08",
         "product": "Beef",
+        "imageSrc": "./products/beef.jpg",
         "price": 5.99
       },
       {
+        "id": "P09",
         "product": "Apples",
+        "imageSrc": "./products/apples.jpg",
         "price": 1.29
       },
       {
+        "id": "P10",
         "product": "Potatoes",
+        "imageSrc": "./products/potatoes.jpg",
         "price": 2.99
       }
     ]

@@ -1,18 +1,18 @@
 import React from "react";
 import './Shop.css';
 import Product from "./shopComponents/product";
-import beefImg from '../assets/products/beef.jpg'
+import uniqid from 'uniqid';
 
-const Shop = () => {
+const Shop = (props) => {
+    const shopItems = props.items
 
     return (
         <div className="contentBg shop-container">
-            <Product name="Beef" price="$2.4" image={beefImg} />
-            <Product name="Beef" price="$2.4" image={beefImg} />
-            <Product name="Beef" price="$2.4" image={beefImg} />
-            <Product name="Beef" price="$2.4" image={beefImg} />
-            <Product name="Beef" price="$2.4" image={beefImg} />
-            <Product name="Beef" price="$2.4" image={beefImg} />
+            {
+                shopItems.map((currPdt) => {
+                    return <Product key={uniqid()} name={currPdt.product} price={currPdt.price} image={currPdt.imageSrc} />
+                })
+            }
         </div>
     )
 
