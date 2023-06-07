@@ -53,8 +53,6 @@
 .shopBtn {
   padding: 0.5rem 1rem;
   width: max(180px, 40%);
-
-  background-color: var(--myYellow);
 }
 
 .shopBtn:hover {

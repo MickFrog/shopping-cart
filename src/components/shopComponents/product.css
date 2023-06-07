@@ -1,0 +1,37 @@
+.pdt-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--myBlack);
+    color: white;
+}
+
+.pdt-image {
+    width: 500px;
+}
+
+.pdt-name{
+    font-weight: 600;
+}
+
+.pdt-name, .pdt-price {
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid black;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addCart-Btn {
+    width: 80%;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+.addCart-Btn:hover {
+    background-color: white;
+}

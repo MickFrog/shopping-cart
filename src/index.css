@@ -32,6 +32,6 @@ a:hover {
 button {
   font-family: inherit;
   font-size: inherit;
-  /* border-radius: 0.5rem; */
   border: none;
+  background-color: var(--myYellow);
 }

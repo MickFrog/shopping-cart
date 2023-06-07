@@ -1,3 +1,10 @@
 .shop-container {
   min-height: 100vh;
+  padding: 5%;
+
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: var(--myPadding);
+
+  justify-content: center;
 }
