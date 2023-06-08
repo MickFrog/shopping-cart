@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 import veggiesImg from './assets/veggiesHome.jpg'
 
@@ -13,7 +14,9 @@ function App() {
         <div>Empowering healthy lives through convenient access to fresh, sustainable groceries.</div>
         <div>Join our organic community and experience the goodness of nature delivered to your doorstep</div>
           
-        <button className='shopBtn'>Shop Now</button>
+        <Link to='/shop'>
+          <button className='shopBtn'>Shop Now</button>
+        </Link>
       </div>
     </div>
   );
