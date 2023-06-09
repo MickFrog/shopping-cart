@@ -3,13 +3,14 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    width: inherit;
 
     background-color: var(--myBlack);
     color: white;
 }
 
 .pdt-image {
-    width: 500px;
+    width: 100%;
     aspect-ratio: 2/1;
     object-fit: cover;
 }

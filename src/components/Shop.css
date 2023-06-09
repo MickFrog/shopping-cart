@@ -3,7 +3,7 @@
   padding: 5%;
 
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: var(--myPadding);
 
   justify-content: center;
