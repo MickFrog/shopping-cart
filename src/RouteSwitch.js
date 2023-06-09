@@ -15,17 +15,17 @@ const RouteSwitch = () => {
     /*Format: cart = [{
     *     cartPdt: {pdt},
     *     quantity: number eg 1
-    *    }]
+    *    },...]
     */
-   
+
     const updateCart = useCallback((pdt, bAction) => { //bAction ie 1-add or (-1)-remove
         const productInCart = cart.filter((elem) => elem.cartPdt === pdt);
         
-        if(productInCart) {
+        if(productInCart.length > 0) {
             let updatedCart = [];
             let elemRemoved = false;
 
-            updatedCart = cart.map((elem) => {
+            updatedCart = cart.map((elem) => { //modify cart
                 if(elem.cartPdt === pdt) {
                     elem.quantity += bAction;
                     
@@ -42,6 +42,7 @@ const RouteSwitch = () => {
             }
 
             setCart(updatedCart)
+            console.log(cart)
             return;
         }
 
@@ -50,6 +51,7 @@ const RouteSwitch = () => {
             cartPdt: pdt,
             quantity: 1
         }]);
+        console.log(cart)
     }, [cart])
 
     return (
@@ -58,7 +60,7 @@ const RouteSwitch = () => {
 
             <Routes>
                 <Route path="/" element={<App />}/>
-                <Route path="/shop" element={<Shop items={stock}/>}/>
+                <Route path="/shop" element={<Shop items={stock} cartCallback={updateCart}/>}/>
                 <Route path="/cart" element={<Cart />}/>
             </Routes>
 
