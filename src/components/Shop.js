@@ -10,7 +10,7 @@ const Shop = (props) => {
         <div className="contentBg shop-container">
             {
                 shopItems.map((currPdt) => {
-                    return <Product key={uniqid()} name={currPdt.product} price={currPdt.price} image={currPdt.imageSrc} />
+                    return <Product key={uniqid()} productDetails={currPdt} />
                 })
             }
         </div>

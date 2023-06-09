@@ -4,10 +4,10 @@ import './product.css';
 const Product = (props) => {
     return (
         <div className="pdt-container">
-            <img className="pdt-image" src={props.image} alt={props.name} />
+            <img className="pdt-image" src={props.productDetails.imageSrc} alt={props.productDetails.product} />
 
-            <div className="pdt-name">{props.name}</div>
-            <div className="pdt-price">{props.price}</div>
+            <div className="pdt-name">{props.productDetails.product}</div>
+            <div className="pdt-price">{props.productDetails.price}</div>
             <button className="addCart-Btn">Add to cart</button>
         </div>
     )
