@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -42,7 +42,6 @@ const RouteSwitch = () => {
             }
 
             setCart(updatedCart)
-            console.log(cart)
             return;
         }
 
@@ -51,12 +50,23 @@ const RouteSwitch = () => {
             cartPdt: pdt,
             quantity: 1
         }]);
-        console.log(cart)
+    }, [cart])
+
+    const [cartCount, setCartCount] = useState(0);
+
+    useEffect(() => { //update cartCount onChange of cart
+        if(cart.length < 1) return; //prevent running on empty cart
+
+        let newCount = cart.reduce((total, elem) => {
+            return total + elem.quantity
+        }, 0);
+
+        setCartCount(newCount);
     }, [cart])
 
     return (
         <BrowserRouter>
-            <Header />
+            <Header cartCount={cartCount}/>
 
             <Routes>
                 <Route path="/" element={<App />}/>

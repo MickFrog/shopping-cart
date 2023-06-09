@@ -35,6 +35,8 @@
 
 .shopperCart::before{
     content: attr(data-count);
+    padding: 5px;
+    font-size: var(--smallText);
     position: absolute;
     top: -0.5em;
     right: -0.5em;
