@@ -1,3 +1,13 @@
 .cart-container {
     min-height: 100vh;
-  }
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  width: 100%;
+  padding: var(--myPadding);
+}

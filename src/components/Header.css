@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
 
 .myHeader {
+    position: sticky;
+    top: 0;
+    
     height: max(6rem, max-content);
     background-color: var(--myBlack);
     color: white;

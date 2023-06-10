@@ -71,7 +71,7 @@ const RouteSwitch = () => {
             <Routes>
                 <Route path="/" element={<App />}/>
                 <Route path="/shop" element={<Shop items={stock} cartCallback={updateCart}/>}/>
-                <Route path="/cart" element={<Cart />}/>
+                <Route path="/cart" element={<Cart cartData={cart}/>}/>
             </Routes>
 
             <Footer />
