@@ -1,6 +1,7 @@
 import React from "react";
 import './Cart.css';
 import CartProduct from "./cartComponents/cartProduct";
+import uniqid from 'uniqid';
 
 const Cart = (props) => {
 
@@ -9,14 +10,16 @@ const Cart = (props) => {
 
         if(!currCart.length) return 0;
 
-        return currCart.reduce((finalTotal, currElem) => {
-            let totalProductsCost = parseFloat(
-                (currElem.cartPdt.price * currElem.quantity)
-                .toFixed(2))
+        let overallTotal =  currCart.reduce((finalTotal, currElem) => {
+            let totalProductsCost = currElem.cartPdt.price * currElem.quantity;
 
             return finalTotal + totalProductsCost;
         }, 0)
+
+        return parseFloat(overallTotal.toFixed(2))
     }
+
+    let cartItems = props.cartData;
 
     return (
         <div className="contentBg cart-container">
@@ -29,11 +32,11 @@ const Cart = (props) => {
             </div>
 
             <div className="cartPdts-container">
-                <CartProduct />
-                <CartProduct />
-                <CartProduct />
-                <CartProduct />
-                <CartProduct />
+                {
+                    cartItems.map((currItem) => {
+                        return <CartProduct key={uniqid()} itemDetails={currItem} cartCallback={props.cartCallback}/>
+                    })
+                }
             </div>
         </div>
     )

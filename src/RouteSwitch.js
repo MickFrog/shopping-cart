@@ -38,7 +38,8 @@ const RouteSwitch = () => {
             })
 
             if(elemRemoved) { //filter out removed cart Elements
-                updatedCart = updateCart.filter((currElem) => currElem !== undefined)
+                updatedCart = updatedCart.filter((currElem) => currElem !== undefined)
+                console.log(updatedCart)
             }
 
             setCart(updatedCart)
@@ -71,7 +72,7 @@ const RouteSwitch = () => {
             <Routes>
                 <Route path="/" element={<App />}/>
                 <Route path="/shop" element={<Shop items={stock} cartCallback={updateCart}/>}/>
-                <Route path="/cart" element={<Cart cartData={cart}/>}/>
+                <Route path="/cart" element={<Cart cartData={cart} cartCallback={updateCart}/>}/>
             </Routes>
 
             <Footer />
