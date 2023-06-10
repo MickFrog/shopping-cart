@@ -39,7 +39,6 @@ const RouteSwitch = () => {
 
             if(elemRemoved) { //filter out removed cart Elements
                 updatedCart = updatedCart.filter((currElem) => currElem !== undefined)
-                console.log(updatedCart)
             }
 
             setCart(updatedCart)

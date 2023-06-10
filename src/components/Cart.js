@@ -4,6 +4,7 @@ import CartProduct from "./cartComponents/cartProduct";
 import uniqid from 'uniqid';
 
 const Cart = (props) => {
+    let cartItems = props.cartData;
 
     const produceTotal = () => {
         let currCart = props.cartData;
@@ -19,7 +20,9 @@ const Cart = (props) => {
         return parseFloat(overallTotal.toFixed(2))
     }
 
-    let cartItems = props.cartData;
+    const handleCheckout = () => {
+        alert("You spent $" + produceTotal() + " at Mick-Grocies")
+    }
 
     return (
         <div className="contentBg cart-container">
@@ -28,7 +31,7 @@ const Cart = (props) => {
                     Total: {produceTotal()}
                 </div>
 
-                <button>Checkout</button>
+                <button onClick={handleCheckout}>Checkout</button>
             </div>
 
             <div className="cartPdts-container">
