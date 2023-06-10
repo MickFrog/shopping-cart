@@ -1,0 +1,21 @@
+.cart-pdt {
+    border-radius: 2rem;
+}
+
+.quantity-display {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.quantity-display > button {
+    width: 48px;
+}
+
+.quantity-display > button:hover {
+    background-color: var(--myGreen);
+}

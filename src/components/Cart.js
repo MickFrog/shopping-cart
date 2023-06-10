@@ -1,5 +1,6 @@
 import React from "react";
 import './Cart.css';
+import CartProduct from "./cartComponents/cartProduct";
 
 const Cart = (props) => {
 
@@ -25,6 +26,14 @@ const Cart = (props) => {
                 </div>
 
                 <button>Checkout</button>
+            </div>
+
+            <div className="cartPdts-container">
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
+                <CartProduct />
             </div>
         </div>
     )

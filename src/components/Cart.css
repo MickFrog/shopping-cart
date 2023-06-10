@@ -11,3 +11,22 @@
   width: 100%;
   padding: var(--myPadding);
 }
+
+.cart-header > button {
+  padding: 1rem;
+}
+
+.cart-header > button:hover {
+  background-color: var(--myBlack);
+  color: var(--myGreen);
+}
+
+.cartPdts-container {
+  padding: 5%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: var(--myPadding);
+
+  justify-content: center;
+}
