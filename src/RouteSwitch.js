@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { HashRouter } from 'react-router-dom';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import App from './App';
@@ -65,7 +66,7 @@ const RouteSwitch = () => {
     }, [cart])
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Header cartCount={cartCount}/>
 
             <Routes>
@@ -75,7 +76,7 @@ const RouteSwitch = () => {
             </Routes>
 
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
