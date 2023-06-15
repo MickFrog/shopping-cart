@@ -14,6 +14,7 @@ describe("Header component testing", () => {
         );
 
         //get text elements
+        //tests done before addition of components so may fail with filled out components
         const storeName = screen.getByRole('heading');
         const shopName = screen.getByTestId('shop-text-test');
         const cartText = screen.getByTestId('cart-text-test');
