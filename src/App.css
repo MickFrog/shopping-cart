@@ -1,61 +1,89 @@
 :root {
-  --myBlack: #1D1A05;
-  --myGreen: #7FB069;
-  --myYellow: #F7B32B;
-  --myBlue: #388697;
-  --myPadding: 24px;
-  --textSize: calc(10px + 2vmin);
-  --smallText: calc(10px + 1vmin);
+    --myBlack: #1d1a05;
+    --myGreen: #7fb069;
+    --myYellow: #f7b32b;
+    --myBlue: #388697;
+    --myPadding: 24px;
+    --textSize: calc(10px + 2vmin);
+    --smallText: calc(10px + 1vmin);
 }
 
 .contentBg {
-  background-color: var(--myGreen);
+    background-color: var(--myGreen);
 }
 
 .App {
-  background-image: url(./assets/waveBg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(./assets/waveBg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  padding: var(--myPadding);
-  font-size: 1.2rem;
-  min-height: calc(100vh - 6rem);
+    padding: var(--myPadding);
+    font-size: 1.2rem;
+    min-height: calc(100vh - 6rem);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
 
-  gap: 1rem;
+    gap: 1rem;
 }
 
 #veggiesImg {
-  height: 30rem;
-  width: 50rem;
+    height: 32rem;
 
-  border-radius: 2.5rem;
+    border-radius: 2.5rem;
 }
 
 .home-text {
-  height: 35rem;
-  width: max(25rem, 30%);
-  display: flex;
-  justify-content: center;
-  flex-flow: column nowrap;
-  gap: 1rem;
-  font-size: 1.8rem;
+    height: 35rem;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    font-size: 1.8rem;
 }
 
 .quality-produce {
-  font-weight: 700;
-  color: var(--myYellow);
+    font-weight: 700;
+    color: var(--myYellow);
 }
 
 .shopBtn {
-  padding: 0.5rem 1rem;
-  width: max(180px, 40%);
+    padding: 0.5rem 1rem;
+    width: max(180px, 40%);
 }
 
 .shopBtn:hover {
-  background-color: var(--myBlack);
-  color: var(--myGreen);
+    background-color: var(--myBlack);
+    color: var(--myGreen);
+}
+
+@media (max-width: 800px) {
+    .App {
+        flex-flow: column nowrap;
+        padding: 0px;
+        justify-content: flex-start;
+    }
+
+    #veggiesImg {
+        display: none;
+    }
+
+    .homePic {
+        width: 100%;
+        height: 20vh;
+        background-image: url(./assets/veggiesHome.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-text {
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 5px;
+        width: initial;
+    }
 }

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap");
 
 .myHeader {
     position: sticky;
     top: 0;
-    
+
     height: max(6rem, max-content);
     background-color: var(--myBlack);
     color: white;
@@ -17,12 +17,11 @@
 }
 
 .storeName {
-    font-family: 'Zilla Slab Highlight', cursive;
-    color: #F7B32B;
+    font-family: "Zilla Slab Highlight", cursive;
+    color: #f7b32b;
 }
 
 .nav-links {
-    width: 20%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -35,7 +34,7 @@
     align-items: flex-start;
 }
 
-.shopperCart::before{
+.shopperCart::before {
     content: attr(data-count);
     padding: 5px;
     font-size: var(--smallText);
