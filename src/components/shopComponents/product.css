@@ -9,25 +9,26 @@
     color: white;
 
     border-radius: 0.5rem;
+    overflow: clip;
 }
 
 .pdt-image {
     width: 100%;
     aspect-ratio: 2/1;
     object-fit: cover;
-
-    border-radius: 0.5rem 0.5rem 0 0;
+    object-position: center;
 }
 
-.pdt-name{
+.pdt-name {
     font-weight: 600;
 }
 
-.pdt-name, .pdt-price {
+.pdt-name,
+.pdt-price {
     padding: 10px;
     width: 100%;
     border-top: 1px solid black;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;

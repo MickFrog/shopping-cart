@@ -1,10 +1,16 @@
 .shop-container {
-  min-height: 100vh;
-  padding: 5%;
+    min-height: 100vh;
+    padding: 5%;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  gap: var(--myPadding);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: var(--myPadding);
 
-  justify-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .shop-container {
+        grid-template-columns: 1fr;
+    }
 }
