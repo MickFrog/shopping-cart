@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.e5c9c4c3.css",
+    "main.css": "/shopping-cart/static/css/main.6f6d598b.css",
     "main.js": "/shopping-cart/static/js/main.dd806fb1.js",
     "static/media/veggiesHome.jpg": "/shopping-cart/static/media/veggiesHome.dd90dd301fdf6d2e47d7.jpg",
     "static/media/instagramIcon.svg": "/shopping-cart/static/media/instagramIcon.d0506395f83422ec1849905ad86d3e16.svg",
@@ -10,11 +10,11 @@
     "static/media/waveBg.svg": "/shopping-cart/static/media/waveBg.d66948a04def31edbdb0.svg",
     "static/media/youtubeIcon.svg": "/shopping-cart/static/media/youtubeIcon.220ec1b3c7ea44d93e873b976195d5ec.svg",
     "static/media/facebookIcon.svg": "/shopping-cart/static/media/facebookIcon.32eafe04cf8ab2df475d5074703697d8.svg",
-    "main.e5c9c4c3.css.map": "/shopping-cart/static/css/main.e5c9c4c3.css.map",
+    "main.6f6d598b.css.map": "/shopping-cart/static/css/main.6f6d598b.css.map",
     "main.dd806fb1.js.map": "/shopping-cart/static/js/main.dd806fb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e5c9c4c3.css",
+    "static/css/main.6f6d598b.css",
     "static/js/main.dd806fb1.js"
   ]
 }
