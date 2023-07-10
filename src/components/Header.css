@@ -3,14 +3,13 @@
 .myHeader {
     position: sticky;
     top: 0;
-
-    height: max(6rem, max-content);
     background-color: var(--myBlack);
     color: white;
 
     padding: var(--myPadding);
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
@@ -48,4 +47,12 @@
     align-items: center;
     border-radius: 50%;
     background-color: var(--myGreen);
+}
+
+@media (max-width: 500px) {
+    .myHeader {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 }

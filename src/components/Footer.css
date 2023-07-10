@@ -15,8 +15,9 @@
 .about-details {
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    gap: 10%;
+    gap: var(--myPadding);
 }
 
 .address > p {
@@ -29,6 +30,6 @@
 }
 
 .socials > img:hover {
-    scale: 1.2;
+    transform: scale(1.2);
     transition: 300ms;
 }

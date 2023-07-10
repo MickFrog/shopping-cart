@@ -4,8 +4,8 @@
     --myYellow: #f7b32b;
     --myBlue: #388697;
     --myPadding: 24px;
-    --textSize: calc(10px + 2vmin);
-    --smallText: calc(10px + 1vmin);
+    --textSize: calc(15px + 2vmin);
+    --smallText: calc(15px + 1vmin);
 }
 
 .contentBg {
@@ -42,7 +42,7 @@
     justify-content: center;
     flex-flow: column nowrap;
     gap: 1rem;
-    font-size: 1.8rem;
+    font-size: calc(var(--textSize) + 2px);
 }
 
 .quality-produce {
@@ -52,7 +52,6 @@
 
 .shopBtn {
     padding: 0.5rem 1rem;
-    width: max(180px, 40%);
 }
 
 .shopBtn:hover {
@@ -85,5 +84,6 @@
         justify-content: flex-start;
         padding: 5px;
         width: initial;
+        height: max-content;
     }
 }
