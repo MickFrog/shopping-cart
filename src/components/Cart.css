@@ -3,30 +3,35 @@
 }
 
 .cart-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 
-  width: 100%;
-  padding: var(--myPadding);
+    width: 100%;
+    padding: var(--myPadding);
 }
 
 .cart-header > button {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .cart-header > button:hover {
-  background-color: var(--myBlack);
-  color: var(--myGreen);
+    background-color: var(--myBlack);
+    color: var(--myGreen);
 }
 
 .cartPdts-container {
-  padding: 5%;
+    padding: 5%;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: var(--myPadding);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: var(--myPadding);
 
-  justify-content: center;
+    justify-content: center;
+}
+@media (max-width: 500px) {
+    .cartPdts-container {
+        grid-template-columns: 1fr;
+    }
 }
