@@ -48,6 +48,14 @@ The project can be viewed live [here](https://mickfrog.github.io/shopping-cart)
   npm start
 ```
 
+### Built with
+
+-   React
+-   CSS
+-   JSX
+-   React router
+-   Jest
+
 ## Image credit
 
 ### Home page and footer images
